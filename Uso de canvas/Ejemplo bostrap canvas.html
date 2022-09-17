@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+crossorigin="anonymous"> 
+<meta >
+<title>Ejemplo bootstrap</title>
+<style>
+
+.trans{
+  width: 400px;
+  background-color: black;
+  display: center;
+  justify-content: center;
+}
+
+* {cursor: url(crosshair.cur), default;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000000;
+
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=165029), default;
+}
+
+#canvas1{
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 706px;
+}
+</style>
+</head>
+<body class="container" style="background-color:#000000;" onLoad="dibujarCanvas();">
+<div id="info">
+
+    <div class="col-4 offset-4">
+        <form id="Formulario" onsubmit="salida()" class="p-3 mt-5 shadow border" >
+            <h2 class="text-center text-primary">Aprende sobre Canvas y bootstrap operaciones matematicas</h2>
+            <img src="img/canvas.jpg" height="400px" width="400px"/>
+
+                <button class="btn btn-primary trans mt-2" onclick="Formularioinsertar()"  type="submit">Suma</button>  
+               
+                <button class="btn btn-primary trans mt-2" onclick="resta()" type="submit">Resta</button>
+                 
+                <button class="btn btn-primary trans mt-2" onclick="multiplicacion()" type="submit">Multiplicacion</button>
+
+                <button class="btn btn-primary trans mt-2" onclick="division()" type="submit">Division</button>
+
+            
+
+
+                
+               
+        </form>
+
+    </div>
+</div>
+<script src="js/Formulario.js"></script>
+</body>
+
+</html>
